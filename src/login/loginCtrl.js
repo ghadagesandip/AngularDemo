@@ -1,10 +1,13 @@
 (function(){
     angular.module('myApp.login')
-        .controller('loginCtrl', function($scope, mathService){
+        .controller('loginCtrl', function( mathService, $filter){
+
+            var vm = this;
             console.log('login controller loaded');
             console.log('mathService', mathService)
-            var a = mathService.square(2);
-            $scope.val = a;
-            this.name = "sandip";
+            mathService.square(2);
+            vm.name= $filter('reverseMe')('Sandip Ghadge');
+            vm.val = 'saa';
+            return vm;
         })
 })();
