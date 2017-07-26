@@ -5,5 +5,6 @@
             console.log('mathService', mathService)
             var a = mathService.square(2);
             $scope.val = a;
+            this.name = "sandip";
         })
 })();

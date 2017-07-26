@@ -1,5 +1,5 @@
 (function(){
-    angular.module('myApp', ['ui.router','myservices','lbServices'])
+    angular.module('myApp', ['ui.router','myservices'])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
             $urlRouterProvider
