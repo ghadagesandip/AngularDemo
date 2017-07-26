@@ -1,5 +1,5 @@
 (function(){
-    angular.module('myApp', ['ui.router','myservices'])
+    angular.module('myApp', ['ui.router','myservices','myApp.login'])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
             $urlRouterProvider
@@ -10,7 +10,7 @@
                 .state('login', {
                     url: '/login',
                     controller:'loginCtrl',
-                    templateUrl: 'login/login.html'
+                    templateUrl: 'src/login/login.html'
                 })
 
 

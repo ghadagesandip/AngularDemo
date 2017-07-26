@@ -1,5 +1,5 @@
 (function(){
-    angular.module('myApp')
+    angular.module('myApp.login')
         .controller('loginCtrl', function($scope, mathService){
             console.log('login controller loaded');
             console.log('mathService', mathService)

@@ -5,6 +5,5 @@
                 console.log('a called');
                 return a*a;
             };
-
         })
 })();
