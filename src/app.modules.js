@@ -12,6 +12,34 @@
                     controller:'loginCtrl',
                     controllerAs: 'vm',
                     templateUrl: 'src/login/login.html'
+
+                })
+
+                .state('dashboard',{
+                    url: '/dashboard',
+                    //controller:'DashboardCtrl',
+                    //controllerAs: 'dashboard',
+                    //templateUrl: 'src/login/dashboard.html',
+                    views: {
+                        'header': {
+                            templateUrl: 'src/templates/header.html',
+                            controller: function($scope){
+
+                            }
+                        },
+                        'content': {
+                            templateUrl: 'src/templates/content.html',
+                            controller: 'loginCtrl',
+                            controllerAs: 'vm'
+
+                        },
+                        'footer': {
+                            templateUrl: 'src/templates/footer.html',
+                            controller: function($scope){
+
+                            }
+                        }
+                    }
                 })
 
 

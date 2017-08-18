@@ -10,4 +10,11 @@
             vm.val = 'saa';
             return vm;
         })
+
+        .controller('DashboardCtrl', function(){
+            var dashboard = this;
+            dashboard.title = 'Dashboard loaded';
+            console.log('dashboard loaded')
+            return dashboard;
+        })
 })();
